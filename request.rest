@@ -1,0 +1,50 @@
+//create a user
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Serliyaa",
+    "email": "serliya2701@gmail.com",
+    "password": "12345",
+    "confPassword": "12345",
+    "role": "user"
+}
+
+###
+// get all Users
+GET http://localhost:3000/users
+
+###
+/// Get Single User
+GET http://localhost:3000/users/se5efg367-9087-x2t8-a2k8-80red174dfh
+
+###
+// update a user
+//create a user
+PATCH http://localhost:3000/users/se5efg367-9087-x2t8-a2k8-80red174dfh
+Content-Type: application/json
+
+{
+    "name": "Serliyaa Updated",
+    "email": "serliya2701@gmail.com",
+    "password": "12345",
+    "confPassword": "12345",
+    "role": "user"
+}
+
+###
+// delete a user
+DELETE http://localhost:3000/users/me
+
+###
+// Login User
+POST http://localhost:3000/Login
+Content-Type: application/json
+
+{
+    "email": "serliya2701@gmail.com",
+    "password": "12345"
+}
+
+###
+DELETE http://localhost:3000/logout
